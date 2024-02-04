@@ -5,20 +5,20 @@
 class KuberoCli < Formula
   desc "Manage your kubero applications with the CLI"
   homepage "https://www.kubero.dev"
-  version "1.11.0"
+  version "2.0.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kubero-dev/kubero-cli/releases/download/v1.11.0/kubero-cli_darwin_arm64.tar.gz"
-      sha256 "c10dc7a3d7956e9d71a5ac12a095efb2e4876c1fbe18f3d13eed68689bfbcb95"
+      url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.0.0/kubero-cli_darwin_arm64.tar.gz"
+      sha256 "f3f964740b000af22acfa12a4967d89f657d6bd96dd92c6cef222f3b755149e6"
 
       def install
         bin.install "kubero"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kubero-dev/kubero-cli/releases/download/v1.11.0/kubero-cli_darwin_amd64.tar.gz"
-      sha256 "7dce8d4a1ff18af9f031834ab333e703d22a9aadaa832c41a163a665d8de4d07"
+      url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.0.0/kubero-cli_darwin_amd64.tar.gz"
+      sha256 "f8e84e881ba5a3ef5c8d1c457583045d5739a33e87f1312d78d41912c6e273b2"
 
       def install
         bin.install "kubero"
@@ -28,16 +28,16 @@ class KuberoCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kubero-dev/kubero-cli/releases/download/v1.11.0/kubero-cli_linux_arm64.tar.gz"
-      sha256 "3e2f3d0f62701ce4cf08c5a4e79c9c2fea89dd37c97ee274cb2b4000a097f3ab"
+      url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.0.0/kubero-cli_linux_arm64.tar.gz"
+      sha256 "4e22ef18b56022126d59265e9c98998e3f7c9c71ea03e0ded632412d4dad7d66"
 
       def install
         bin.install "kubero"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kubero-dev/kubero-cli/releases/download/v1.11.0/kubero-cli_linux_amd64.tar.gz"
-      sha256 "09d96c42501c7de5e7772e70ce671b8ffb65b0ed15e41443bf946f4951c439b8"
+      url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.0.0/kubero-cli_linux_amd64.tar.gz"
+      sha256 "11cff97050eb5ebc39d814e5abd2518704919aa2b7c80a9d2f71c4958bde0ec3"
 
       def install
         bin.install "kubero"
