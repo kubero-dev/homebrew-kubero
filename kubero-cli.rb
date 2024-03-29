@@ -5,20 +5,20 @@
 class KuberoCli < Formula
   desc "Manage your kubero applications with the CLI"
   homepage "https://www.kubero.dev"
-  version "2.0.0"
+  version "2.1.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.0.0/kubero-cli_darwin_arm64.tar.gz"
-      sha256 "f3f964740b000af22acfa12a4967d89f657d6bd96dd92c6cef222f3b755149e6"
+    if Hardware::CPU.intel?
+      url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.1.0/kubero-cli_darwin_amd64.tar.gz"
+      sha256 "0d2da410b420b35f71dc18fa47603307280858809be74fadd77d1f889b18dc59"
 
       def install
         bin.install "kubero"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.0.0/kubero-cli_darwin_amd64.tar.gz"
-      sha256 "f8e84e881ba5a3ef5c8d1c457583045d5739a33e87f1312d78d41912c6e273b2"
+    if Hardware::CPU.arm?
+      url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.1.0/kubero-cli_darwin_arm64.tar.gz"
+      sha256 "df2b7017d46430ca3f1434bac4b042a3f454087aaff3432240cddb86a7aefe6b"
 
       def install
         bin.install "kubero"
@@ -28,16 +28,16 @@ class KuberoCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.0.0/kubero-cli_linux_arm64.tar.gz"
-      sha256 "4e22ef18b56022126d59265e9c98998e3f7c9c71ea03e0ded632412d4dad7d66"
+      url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.1.0/kubero-cli_linux_arm64.tar.gz"
+      sha256 "58ae765640800f0a5804982b191863c34ffd523da7399ec73d09324abe9b97b5"
 
       def install
         bin.install "kubero"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.0.0/kubero-cli_linux_amd64.tar.gz"
-      sha256 "11cff97050eb5ebc39d814e5abd2518704919aa2b7c80a9d2f71c4958bde0ec3"
+      url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.1.0/kubero-cli_linux_amd64.tar.gz"
+      sha256 "356f8664ee49d29a9e170aa4d3c8eb74787f5a08137ab7e9c517bca40d99336f"
 
       def install
         bin.install "kubero"
