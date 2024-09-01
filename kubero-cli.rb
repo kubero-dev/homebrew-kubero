@@ -10,7 +10,7 @@ class KuberoCli < Formula
   on_macos do
     on_intel do
       url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.4.1/kubero-cli_darwin_amd64.tar.gz"
-      sha256 "0a077cded670f365f6712afb20c8b34090dd9a3783583533eb245339b3ec7657"
+      sha256 "9940627f0bd36a04675da4957256f67782f693de1f9c19bd3d8f00daee9bf916"
 
       def install
         bin.install "kubero"
@@ -18,7 +18,7 @@ class KuberoCli < Formula
     end
     on_arm do
       url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.4.1/kubero-cli_darwin_arm64.tar.gz"
-      sha256 "f4096fef5ec71f161de006f114489dcb2e76ef799704ffdca938173adcdb28c2"
+      sha256 "91038106c82ee95fe0757a6cb4326da0210c556e198e94de0c4bc6d0c5efeada"
 
       def install
         bin.install "kubero"
@@ -30,7 +30,7 @@ class KuberoCli < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.4.1/kubero-cli_linux_amd64.tar.gz"
-        sha256 "4938d84622fad03a94b0e39906099e683dc8d6f1a823f77daeae918c41f6bd31"
+        sha256 "7161d9d03e46e23e410465cc842f46a3e899ef44c0260b9514bec2f05bfd32ce"
 
         def install
           bin.install "kubero"
@@ -40,7 +40,7 @@ class KuberoCli < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/kubero-dev/kubero-cli/releases/download/v2.4.1/kubero-cli_linux_arm64.tar.gz"
-        sha256 "bcac5dd9100a28db0efc4027d993a5076002b32c8b0e68ab32b42b99ffb77008"
+        sha256 "29690b3c7d3b85ff0ff15a641c22cecb670a1fbc0198d8756b34da9faf66f98c"
 
         def install
           bin.install "kubero"
